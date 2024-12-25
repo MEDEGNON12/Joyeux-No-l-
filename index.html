@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Noël</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h1>Inscription</h1>
+            <form id="signup-form">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" placeholder="Entrez votre nom" required>
+                
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" placeholder="Entrez votre prénom" required>
+                
+                <label for="age">Âge :</label>
+                <input type="number" id="age" placeholder="Entrez votre âge" required>
+                
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+
+        <div id="message-container" class="hidden">
+            <h2 id="greeting"></h2>
+            <div class="animation">
+                <span class="joyeux">Joyeux</span>
+                <span class="noel">Noël</span>
+                <img src="papa_noel.jpeg" alt="Papa -Noël" id="papa-noel">
+                <audio id="background-music" src="noel.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
